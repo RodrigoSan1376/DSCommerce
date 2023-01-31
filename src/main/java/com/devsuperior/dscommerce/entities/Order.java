@@ -1,6 +1,6 @@
 package com.devsuperior.dscommerce.entities;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 import java.time.Instant;
 import java.util.HashSet;
@@ -25,6 +25,7 @@ public class Order {
 
     @OneToOne(mappedBy = "order", cascade = CascadeType.ALL)
     private Payment payment;
+    
     @OneToMany(mappedBy = "id.order")
     private Set<OrderItem> items = new HashSet<>();
 
