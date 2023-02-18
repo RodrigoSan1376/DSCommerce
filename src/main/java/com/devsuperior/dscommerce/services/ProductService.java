@@ -22,6 +22,7 @@ import com.devsuperior.dscommerce.services.exceptions.ResourceNotFoundException;
 
 @Service
 public class ProductService {
+	
     @Autowired
     private ProductRepository repository;
 
